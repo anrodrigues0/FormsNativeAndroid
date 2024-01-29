@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="@dimen/smSpacing">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        app:cardCornerRadius="500dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/home_img_user"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/user_avatar"
+            app:tint="@color/gray" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/home_txt_hi"
+        style="@style/Theme.Forms.Text"
+        android:layout_marginStart="@dimen/smSpacing"
+        android:layout_marginTop="@dimen/smSpacing"
+        android:text="@string/hi"
+        app:layout_constraintStart_toEndOf="@+id/cardView"
+        app:layout_constraintTop_toTopOf="@+id/cardView" />
+
+    <TextView
+        android:id="@+id/home_txt_name"
+        style="@style/Theme.Forms.Text"
+        android:layout_marginStart="@dimen/smSpacing"
+        app:layout_constraintStart_toEndOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/home_txt_hi"
+        tools:text="Bruce Wayne" />
+
+
+    <ImageButton
+        android:id="@+id/home_btn_log_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_logount"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/primary" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/smSpacing"
+        android:contentDescription="@null"
+        android:src="@drawable/baseline_verified_24"
+        app:layout_constraintBottom_toTopOf="@+id/home_txt_congrats"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:tint="@color/success" />
+
+    <TextView
+        android:id="@+id/home_txt_congrats"
+        style="@style/Theme.Forms.Text"
+        android:text="@string/congratulations"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        style="@style/Theme.Forms.Text"
+        android:text="@string/your_register_has_been_concluded"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home_txt_congrats" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Theme.Forms.LinearLayoutContainer">
+
+
+    <ImageView
+        android:id="@+id/register_info_back_button"
+        style="@style/Theme.Forms.OnBackButton"
+        android:contentDescription="@null" />
+
+    <TextView
+        style="@style/Theme.Forms.Title"
+        android:layout_marginVertical="@dimen/xlSpacing"
+        android:text="@string/register_information" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/register_info_input_name"
+        style="@style/Theme.Forms.AuthInputLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/register_info_edit_name"
+            style="@style/Theme.Forms.TextInputEditTex"
+            android:hint="@string/name"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <LinearLayout
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/register_info_btn_next"
+            style="@style/Theme.Forms.Button"
+            android:layout_marginBottom="@dimen/mdSpacing"
+            android:enabled="true"
+            android:text="@string/next" />
+    </LinearLayout>
+</LinearLayout>

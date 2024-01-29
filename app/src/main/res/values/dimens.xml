@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="smSpacing">10dp</dimen>
+    <dimen name="mdSpacing">16dp</dimen>
+    <dimen name="xlSpacing">28dp</dimen>
+    <dimen name="xxlgSpacing">56dp</dimen>
+    <dimen name="lgText">22sp</dimen>
+    <dimen name="mdText">18sp</dimen>
+</resources>

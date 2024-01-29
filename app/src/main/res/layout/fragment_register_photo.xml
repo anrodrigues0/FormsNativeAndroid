@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Theme.Forms.LinearLayoutContainer">
+
+    <ImageButton
+        android:id="@+id/register_photo_btn_back"
+        style="@style/Theme.Forms.OnBackButton"
+        android:contentDescription="@null" />
+
+    <TextView
+        style="@style/Theme.Forms.Title"
+        android:layout_marginVertical="@dimen/xlSpacing"
+        android:text="@string/register_photo" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/xlSpacing"
+        app:cardCornerRadius="500dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+
+            android:id="@+id/register_photo_image_user"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:tint="@color/gray"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/user_avatar" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:id="@+id/register_photo_btn_add_photo"
+        style="@style/Theme.Forms.Button"
+        android:layout_marginTop="@dimen/xxlgSpacing"
+        android:layout_marginBottom="@dimen/mdSpacing"
+        android:text="@string/add_your_photo" />
+
+    <Button
+        android:id="@+id/register_photo_btn_finish"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/finish"
+        android:textColor="@color/primary" />
+</LinearLayout>

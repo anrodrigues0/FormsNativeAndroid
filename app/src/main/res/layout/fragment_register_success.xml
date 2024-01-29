@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <ImageView
+        android:id="@+id/register_congrats_img_check"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_check_circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <TextView
+        android:id="@+id/register_congrats_txt_congrats"
+        style="@style/Theme.Forms.Text"
+        android:layout_marginTop="@dimen/mdSpacing"
+        android:text="@string/congratulations_register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/register_congrats_img_check" />
+
+    <Button
+        android:id="@+id/register_success_btn_login"
+        style="@style/Theme.Forms.Button"
+        android:layout_margin="@dimen/xxlgSpacing"
+        android:text="@string/login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/register_congrats_txt_congrats" />
+</androidx.constraintlayout.widget.ConstraintLayout>

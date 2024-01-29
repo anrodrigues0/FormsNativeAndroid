@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Theme.Forms.LinearLayoutContainer">
+
+    <ImageButton
+        android:id="@+id/register_email_btn_back"
+        style="@style/Theme.Forms.OnBackButton"
+        android:contentDescription="@null" />
+
+    <TextView
+        style="@style/Theme.Forms.Title"
+        android:layout_marginVertical="@dimen/xlSpacing"
+        android:text="@string/register_email" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/register_email_input_email"
+        style="@style/Theme.Forms.AuthInputLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/register_email_edit_email"
+            style="@style/Theme.Forms.TextInputEditTex"
+            android:inputType="textEmailAddress"
+            android:hint="@string/hint_email" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/register_email_btn_next"
+            style="@style/Theme.Forms.Button"
+            android:layout_marginBottom="@dimen/mdSpacing"
+            android:enabled="true"
+            android:text="@string/next" />
+    </LinearLayout>
+</LinearLayout>

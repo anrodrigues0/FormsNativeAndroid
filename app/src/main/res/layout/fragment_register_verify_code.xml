@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Theme.Forms.LinearLayoutContainer">
+
+    <ImageButton
+        android:id="@+id/register_verifycode_btn_back"
+        style="@style/Theme.Forms.OnBackButton"
+        android:contentDescription="@null" />
+
+    <TextView
+        style="@style/Theme.Forms.Title"
+        android:layout_marginVertical="@dimen/xlSpacing"
+        android:text="@string/verify_code" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/register_verifycode_input_verifycode"
+        style="@style/Theme.Forms.AuthInputLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/register_verifycode_edit_verifycode"
+            style="@style/Theme.Forms.TextInputEditTex"
+            android:inputType="number"
+            android:hint="@string/hint_verify_code" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        style="@style/Theme.Forms.Text"
+        android:text="@string/verify_code_warn" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/register_verifycode_btn_next"
+            style="@style/Theme.Forms.Button"
+            android:layout_marginBottom="@dimen/mdSpacing"
+            android:enabled="true"
+            android:text="@string/next" />
+    </LinearLayout>
+
+</LinearLayout>

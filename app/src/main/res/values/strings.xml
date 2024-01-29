@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Forms</string>
+
+    <string name="login">Log in</string>
+    <string name="sign_up">Sign up</string>
+    <string name="or">or</string>
+
+    <string name="next">Next</string>
+    <string name="register_email">Register Email</string>
+    <string name="verify_code">Verify Code</string>
+    <string name="hint_email">E-mail</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_verify_code">your code verification</string>
+    <string name="forgot_password">Forgot password</string>
+
+    <string name="invalid_email">Invalid e-mail</string>
+    <string name="invalid_verify_code_format">Invalid code format</string>
+    <string name="invalid_code">Invalid code</string>
+    <string name="verify_code_warn">we send a code verification to your email (code to test: 123456)</string>
+    <string name="register_your_password">Register your\npassword</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="strong_password_warn">Your password must contain at least one uppercase letter, one lowercase letter, one number letter, one special character and at least 8 characters.</string>
+    <string name="register_information">Register information</string>
+    <string name="name">Name</string>
+    <string name="register_photo">Register Photo</string>
+    <string name="jump">Jump</string>
+    <string name="add_your_photo">Add your photo</string>
+    <string name="save">save</string>
+    <string name="cancel">cancel</string>
+    <string name="finish">Finish</string>
+    <string name="congratulations">Congratulations</string>
+    <string name="your_register_has_been_concluded">your register has been concluded</string>
+    <string name="hi">Hi</string>
+    <string name="congratulations_register">Congratultions, register has been succeed!</string>
+</resources>

@@ -16,11 +16,16 @@
         android:theme="@style/Theme.Forms"
         tools:targetApi="31">
 
-
         <activity
             android:name=".ui.activities.splash.SplashActivity"
             android:screenOrientation="portrait"
-            android:exported="false" />
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
         <activity
             android:name=".ui.activities.welcome.WelcomeActivity"
             android:screenOrientation="portrait"
@@ -34,13 +39,7 @@
             android:name=".ui.activities.login.LoginActivity"
             android:windowSoftInputMode="adjustResize|stateHidden"
             android:screenOrientation="portrait"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true" />
 
         <activity
             android:name=".ui.activities.home.HomeActivity"
